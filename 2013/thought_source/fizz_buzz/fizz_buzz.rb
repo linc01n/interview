@@ -11,12 +11,21 @@ class FizzBuzz
   end
 
   def print(n)
-    case
-    when n % 3 == 0
-      fizz
-    when n % 5 == 0
-      buzz
+    output = Array.new
+
+    if n % 3 == 0
+      output << fizz
     end
+
+    if n % 5 == 0
+      output << buzz
+    end
+
+    if output.empty?
+      output << n
+    end
+
+    output.join
   end
 
 end
