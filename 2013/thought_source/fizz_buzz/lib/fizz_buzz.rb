@@ -9,17 +9,19 @@ class FizzBuzz
   def buzz
     "Buzz"
   end
+  @@rules = {
+    3 => "Fizz",
+    5 => "Buzz"
+  }
 
   def print(n)
     output = Array.new
 
-    if n % 3 == 0
-      output << fizz
-    end
-
-    if n % 5 == 0
-      output << buzz
-    end
+    @@rules.each_pair{|div, word|
+      if n % div == 0
+        output << word
+      end
+    }
 
     if output.empty?
       output << n
