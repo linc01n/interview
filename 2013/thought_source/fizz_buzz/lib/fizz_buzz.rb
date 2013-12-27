@@ -1,14 +1,6 @@
 #!/usr/bin/env ruby
 
 class FizzBuzz
-
-  def fizz
-    "Fizz"
-  end
-
-  def buzz
-    "Buzz"
-  end
   @@rules = {
     3 => "Fizz",
     5 => "Buzz"

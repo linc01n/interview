@@ -8,14 +8,6 @@ class TestFizzBuzz < Minitest::Test
     @fizzbuzz = FizzBuzz.new
   end
 
-  def test_fizz_when_call_fizz
-    assert_equal "Fizz", @fizzbuzz.fizz
-  end
-
-  def test_buzz_when_call_buzz
-    assert_equal "Buzz", @fizzbuzz.buzz
-  end
-
   def test_n_when_not_divisible_by_3_or_5
     assert_equal "4", @fizzbuzz.print(4)
   end
