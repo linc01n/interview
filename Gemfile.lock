@@ -1,6 +1,15 @@
+GIT
+  remote: https://github.com/neezer/minitest-ansi.git
+  revision: 9de87783042aff673def9619bc0a5d920beaffe9
+  specs:
+    minitest-ansi (0.0.1)
+      ansi (~> 1.3)
+      minitest (>= 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    ansi (1.4.3)
     minitest (5.2.0)
 
 PLATFORMS
@@ -8,3 +17,4 @@ PLATFORMS
 
 DEPENDENCIES
   minitest
+  minitest-ansi!
