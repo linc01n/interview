@@ -25,4 +25,12 @@ class TestFizzBuzz < Minitest::Test
     assert_equal "Buzz", @fizzbuzz.print(5)
   end
 
+  def test_it_will_fizz_on_3_division
+    assert_equal "Fizz", @fizzbuzz.print(6)
+  end
+
+  def test_it_will_buzz_on_5_division
+    assert_equal "Buzz", @fizzbuzz.print(10)
+  end
+
 end
