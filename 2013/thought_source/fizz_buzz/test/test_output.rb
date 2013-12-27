@@ -5,7 +5,7 @@ require 'minitest/autorun'
 class TestOutput < MiniTest::Test
 
   def test_output
-    assert_output(IO.read("./fizzbuzz.out")){
+    assert_output(IO.read("./test/fizzbuzz.out")){
       require './output'
     }
   end

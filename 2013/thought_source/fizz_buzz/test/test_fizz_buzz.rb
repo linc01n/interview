@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require "minitest/autorun"
-require './fizz_buzz'
+require 'fizz_buzz'
 
 class TestFizzBuzz < Minitest::Test
 

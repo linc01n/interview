@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './fizz_buzz'
+require 'fizz_buzz'
 
 fizzbuzz = FizzBuzz.new
 
