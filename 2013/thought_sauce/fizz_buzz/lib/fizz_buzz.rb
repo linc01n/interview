@@ -1,25 +1,26 @@
 #!/usr/bin/env ruby
 
+# Logic behind FizzBuzz
+# It will initialize with a set of rules.
+# Starting with number divisible by 3 print Fizz
+# and number divisible by 5 print Buzz.
 class FizzBuzz
-  @@rules = {
-    3 => "Fizz",
-    5 => "Buzz"
-  }
+  def initialize
+    @rules = {
+      3 => 'Fizz',
+      5 => 'Buzz'
+    }
+  end
 
   def print(n)
-    output = Array.new
+    output = []
 
-    @@rules.each_pair{|div, word|
-      if n % div == 0
-        output << word
-      end
-    }
-
-    if output.empty?
-      output << n
+    @rules.each_pair do|div, word|
+      output << word if n % div == 0
     end
+
+    output << n if output.empty?
 
     output.join
   end
-
 end
