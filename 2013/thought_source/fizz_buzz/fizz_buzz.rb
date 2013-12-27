@@ -11,10 +11,10 @@ class FizzBuzz
   end
 
   def print(n)
-    case n
-    when 3
+    case
+    when n % 3 == 0
       fizz
-    when 5
+    when n % 5 == 0
       buzz
     end
   end
