@@ -10,7 +10,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     ansi (1.4.3)
+    docile (1.1.1)
     minitest (5.2.0)
+    multi_json (1.8.2)
+    simplecov (0.8.2)
+      docile (~> 1.1.0)
+      multi_json
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
 
 PLATFORMS
   ruby
@@ -18,3 +25,4 @@ PLATFORMS
 DEPENDENCIES
   minitest
   minitest-ansi!
+  simplecov
