@@ -33,4 +33,8 @@ class TestFizzBuzz < Minitest::Test
     assert_equal "Buzz", @fizzbuzz.print(10)
   end
 
+  def test_it_will_fizzbuzz_on_15
+    assert_equal "FizzBuzz", @fizzbuzz.print(15)
+  end
+
 end
