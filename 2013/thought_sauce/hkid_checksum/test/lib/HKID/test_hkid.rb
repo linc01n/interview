@@ -19,4 +19,8 @@ class TestHkid < Minitest::Test
   def test_check_digit_with_number
     assert_equal "7", @hkid.check_digit("C654321")
   end
+
+  def test_check_digit_is_a
+    assert_equal "A", @hkid.check_digit("C654325")
+  end
 end
