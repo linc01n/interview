@@ -13,13 +13,6 @@ class Hkid
       end
     end
 
-    checksum = 11 - sum % 11
-
-    if checksum < 11
-      checksum.to_s
-    else
-      "A"
-    end
-
+    (11 - sum % 11).to_s(11).upcase
   end
 end
