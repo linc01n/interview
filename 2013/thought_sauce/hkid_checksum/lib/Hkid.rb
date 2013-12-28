@@ -9,7 +9,7 @@ class Hkid
       if index < 6
         sum += char.to_i * (index + 2)
       else
-        sum += (char.ord - 87) * (index + 2)
+        sum += (char.ord - 96) * (index + 2)
       end
     end
 
