@@ -13,6 +13,13 @@ class Hkid
       end
     end
 
-    11 - sum % 11
+    checksum = 11 - sum % 11
+
+    if checksum < 11
+      checksum.to_s
+    else
+      "A"
+    end
+
   end
 end
