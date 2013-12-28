@@ -9,6 +9,6 @@ class TestHkid < Minitest::Test
   end
 
   def test_check_digit
-    assert_equal 8, @hkid.check_digit("A1234567")
+    assert_equal 8, @hkid.check_digit("A123456")
   end
 end
