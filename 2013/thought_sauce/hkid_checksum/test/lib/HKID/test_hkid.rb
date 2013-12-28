@@ -11,5 +11,8 @@ class TestHkid < Minitest::Test
   def test_check_digit
     assert_equal "8", @hkid.check_digit("A123456")
   end
+
+  def test_check_digit_with_different_char
+    assert_equal "A", @hkid.check_digit("B123456")
   end
 end
