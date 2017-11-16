@@ -1,4 +1,5 @@
 language: ruby
 rvm:
-  - "2.1.0"
+  - "2.4.1"
 script: cd "2013/thought_sauce/fizz_buzz";rake
+script: cd "2017/rainforest";rake
