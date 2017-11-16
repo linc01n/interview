@@ -6,3 +6,8 @@ group 'test' do
   gem 'minitest-emoji'
   gem 'simplecov', :require => false
 end
+
+group 'development' do
+  gem 'guard'
+  gem 'guard-rake'
+end
