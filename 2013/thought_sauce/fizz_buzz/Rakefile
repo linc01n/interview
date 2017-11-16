@@ -1,7 +1,4 @@
-require 'bundler'
 require 'rake/testtask'
-
-Bundler.setup(:default, :rake)
 
 Rake::TestTask.new do |t|
   t.libs << "test"

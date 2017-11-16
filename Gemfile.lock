@@ -5,6 +5,7 @@ GEM
     json (2.1.0)
     minitest (5.10.3)
     minitest-emoji (2.0.0)
+    rake (12.3.0)
     simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -17,6 +18,7 @@ PLATFORMS
 DEPENDENCIES
   minitest
   minitest-emoji
+  rake
   simplecov
 
 BUNDLED WITH
